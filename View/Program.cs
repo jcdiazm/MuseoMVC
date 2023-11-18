@@ -19,6 +19,7 @@ namespace View
             ControllerObraArte.InicializarObras();
             ControllerExposicion.InicializarExposiciones();
             ControllerGaleria.InicializarGaleria();
+            //ControllerGaleria.ObtenerGalerias();
             ControllerCurso.InicializarCurso();
             ControllerInsumo.InicializarInsumos();
             //ControllerTourEscolar.
@@ -68,7 +69,7 @@ namespace View
                                 }
                             }
                             Galeria gal = new Galeria(id, nombre, listaExpoAgregar);
-                            //listaExpoAgregar.Add(gal));
+                            ControllerGaleria.ObtenerGalerias().Add(gal);
                             Console.WriteLine("¡GALERIA AGREGADA!");
                             break;
                         case 6:
